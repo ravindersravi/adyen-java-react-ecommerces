@@ -42,7 +42,9 @@ public class CheckoutResource {
 
     @Value("${ADYEN_MERCHANT_ACCOUNT:12312}")
     private String merchantAccount;
+
     @Value("${ADYEN_CLIENT_KEY:123123}")
+
     private String clientKey;
 
     private final Checkout checkout;
