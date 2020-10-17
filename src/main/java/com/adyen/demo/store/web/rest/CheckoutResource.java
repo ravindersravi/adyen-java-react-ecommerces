@@ -40,17 +40,17 @@ public class CheckoutResource {
     private static final String PAYMENT_TYPE_COOKIE = "paymentType";
     private static final String PAYMENT_DATA_COOKIE = "paymentData";
 
-    @Value("${ADYEN_MERCHANT_ACCOUNT:12312}")
+    @Value("${ADYEN_MERCHANT_ACCOUNT:ws@Company.Scorpion123}")
     private String merchantAccount;
 
-    @Value("${ADYEN_CLIENT_KEY:123123}")
+    @Value("${ADYEN_CLIENT_KEY:test_X3QVQG3Q4BHM3H4OJYXZTQPAFY2LL5N7}")
 
     private String clientKey;
 
     private final Checkout checkout;
     private final ShoppingCartService shoppingCartService;
 
-    public CheckoutResource(final ShoppingCartService shoppingCartService, @Value("${ADYEN_API_KEY:1232123}") String apiKey) {
+    public CheckoutResource(final ShoppingCartService shoppingCartService, @Value("${ADYEN_API_KEY:AQEmhmfuXNWTK0Qc+iSDkWsqt+2URtofXqUORc4Ppsd33rHkvkleZ5UQwV1bDb7kfNy1WIxIIkxgBw==-vi46Wq6m8HiLTGxoxynP60Digxjzyk9LrJqiFO5beLE=-kZj5>}8)%x.3>cMp}") String apiKey) {
         this.shoppingCartService = shoppingCartService;
         Client client = new Client(apiKey, Environment.TEST);
         this.checkout = new Checkout(client);
