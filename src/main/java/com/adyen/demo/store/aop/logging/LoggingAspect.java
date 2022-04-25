@@ -16,7 +16,7 @@ import org.springframework.core.env.Profiles;
 import java.util.Arrays;
 
 /**
- * Aspect for logging execution of service and repository Spring components.
+ * Aspect for logging execution of service and repository Spring components.*******
  *
  * By default, it only runs with the "dev" profile.
  */
