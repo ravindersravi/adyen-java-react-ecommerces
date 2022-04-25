@@ -2,7 +2,7 @@ package com.adyen.demo.store.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-/**
+/***************************************************
  * Properties specific to Store.
  * <p>
  * Properties are configured in the {@code application.yml} file.
